@@ -25,24 +25,20 @@ const getAllPodcasts = (req, res) => {
     );
   }
 
-  let curtos = [];
-  let medios = [];
-  let longos = [];
-
-  for (let i = 0; i < duracao.length; i++) {
-    if (duracao[i] < 30) {
-      duracao[i].push(curtos);
-    } else if (duracao[i] >= 30 && duracao[i] <= 60) {
-      duracao[i].push(medios);
+  if (duracao) {
+    if (duracao === "curtos") {
+        resultado = resultado.filter((p) => p.duracao < 30);
+    } else if (duracao === "medios") {
+        resultado = resultado.filter((p) => p.duracao >= 30 && p.duracao <= 60);
+    } else if (duracao === "longos") {
+        resultado = resultado.filter((p) => p.duracao > 60);
     } else {
-      duracao[i].push(longos);
+        return res.status(400).json({
+            success: false,
+            message: "A escrita de duração está errada. Use: curtos, medios ou longos."
+        });
     }
   }
-
-  if (curtos) {
-    
-  }
-
 
   res.status(200).json({
     total: resultado.length,
