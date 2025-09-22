@@ -1,12 +1,23 @@
 {
   "name": "podcasts-geek",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cls && nodemon server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "keywords": [
+    "Backend",
+    "Podcasts",
+    "Avaliação"
+  ],
+  "author": "Arthur Morais",
+  "license": "MIT",
+  "description": "Atividade avaliativa sobre CRUD com tema de Podcasts Geek",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
 }
