@@ -3,33 +3,26 @@ import dados from "./../models/dados.js";
 const { podcasts } = dados;
 
 const getAllPodcasts = (req, res) => {
-  const { nome, apresentadores, tema, episodios, duracao, frequencia, ativo } =
-    req.query;
+  let resultado = podcasts;
+
+  res.status(200).json({
+    total: resultado.length,
+    podcasts: resultado
+  })
+
+
+
+  if (resultado.lenght > 0) {
+    res.status(200).json({
+      total: resultado.length,
+      podcasts: resultado,
+    });
+  } else {
+    res.status(400).json({
+      success: false,
+      message: `Podcasts não encontrados`,
+    });
+  }
 };
 
-let resultado = podcasts;
-
-if (tema) {
-  resultado = resultado.filter(
-    (p) => p.tema.toLowerCase() === tema.toLowerCase()
-  );
-}
-
-if (plataforma) {
-  resultado = resultado.filter(
-    (p) => p.plataforma.toLowerCase() === plataforma.toLowerCase()
-  );
-}
-
-if (frequencia) {
-  resultado = resultado.filter(
-    (p) => p.frequencia.toLowerCase() === frequencia.toLowerCase()
-  );
-}
-
-if (duracao > 30 &&) {
-    resultado = resultado.filter((p) => p.qtdeVitorias == qtdeVitorias);
-  }
-
-
-
+export { getAllPodcasts };

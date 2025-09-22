@@ -1,0 +1,31 @@
+  if (tema) {
+    resultado = resultado.filter(
+      (p) => p.tema.toLowerCase() === tema.toLowerCase()
+    );
+  }
+
+  if (plataforma) {
+    resultado = resultado.filter(
+      (p) => p.plataforma.toLowerCase() === plataforma.toLowerCase()
+    );
+  }
+
+  if (frequencia) {
+    resultado = resultado.filter(
+      (p) => p.frequencia.toLowerCase() === frequencia.toLowerCase()
+    );
+  }
+
+  let curtos = [];
+  let medios = [];
+  let longos = [];
+
+  for (let i = 0; i < duracao.lenght; i++) {
+    if (duracao[i] < 30) {
+      duracao[i].push(curtos);
+    } else if (duracao[i] >= 30 && duracao[i] <= 60) {
+      duracao[i].push(medios);
+    } else {
+      duracao[i].push(longos);
+    }
+  }
