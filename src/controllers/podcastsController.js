@@ -46,4 +46,100 @@ const getPodcastsById = (req, res) => {
   }
 };
 
-export { getAllPodcasts, getPodcastsById };
+const createPodcast = (req, res) => {
+    const { nome, apresentadores, tema, episodios, duracao, plataforma, frequencia, ativo } = req.body;
+    
+    if (!nome) {
+        return res.status(400).json({
+            success: false,
+            message: "O campo 'nome' é obrigatório"
+        });
+    }
+
+    if (!apresentadores) {
+        return res.status(400).json({
+            success: false,
+            message: "O campo 'apresentadores' é obrigatório"
+        });
+    }
+
+    if (!tema) {
+        return res.status(400).json({
+            success: false,
+            message: "O campo 'tema' é obrigatório"
+        });
+    }
+
+    if (!episodios) {
+        return res.status(400).json({
+            success: false,
+            message: "O campo 'episodios' é obrigatório"
+        });
+    }
+
+    if (!duracao) {
+        return res.status(400).json({
+            success: false,
+            message: "O campo 'duracao' é obrigatório"
+        });
+    }
+
+    if (!plataforma) {
+        return res.status(400).json({
+            success: false,
+            message: "O campo 'plataforma' é obrigatório"
+        });
+    }
+
+    if (!frequencia) {
+        return res.status(400).json({
+            success: false,
+            message: "O campo 'frequencia' é obrigatório"
+        });
+    }
+
+    if (!ativo) {
+        return res.status(400).json({
+            success: false,
+            message: "O campo 'ativo' é obrigatório"
+        });
+    }
+
+    if (duracao < 30) {
+        return res.status(400).json({
+            success: false,
+            message: "A duração média do episódio deve ser maior que 15 minutos!",
+          });
+    }
+
+    if (episodios < 0) {
+        return res.status(400).json({
+          success: false,
+          message: "O número de epsiódios não pode ser negativo!",
+        });
+      } 
+
+      const novoPodcast = {
+        id: podcasts.length + 1,
+        nome,
+        tema,
+        apresentadores,
+        episodios,
+        duracao,
+        plataforma, 
+        frequencia,
+        ativo
+      };
+
+      podcasts.push(novoPodcast);
+
+      res.status(200).json({
+        success: true,
+        message: "Podcast cadastrado com sucesso!",
+        podcast: novoPodcast,
+      });  
+}
+
+const deletePodcast = (req, res) => 
+
+export { getAllPodcasts, getPodcastsById, createPodcast };

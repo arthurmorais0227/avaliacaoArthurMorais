@@ -8,7 +8,7 @@ const podcasts = [
       ],
       "tema": "Cultura pop, ciência, história, cinema, quadrinhos, tecnologia e games.",
       "episodios": 900,
-      "duracao_media_minutos": 105,
+      "duracao": 105,
       "plataforma": "Spotify",
       "frequencia": "semanal",
       "ativo": true
@@ -23,7 +23,7 @@ const podcasts = [
       ],
       "tema": "Filmes, games, HQs, animações, séries e cultura geek em geral.",
       "episodios": 500,
-      "duracao_media_minutos": 75,
+      "duracao": 75,
       "plataforma": "Apple Podcasts",
       "frequencia": "semanal",
       "ativo": true
@@ -39,7 +39,7 @@ const podcasts = [
       ],
       "tema": "Novidades sobre o universo Marvel e DC, notícias e análises de filmes, séries e quadrinhos.",
       "episodios": 400,
-      "duracao_media_minutos": 52,
+      "duracao": 52,
       "plataforma": "YouTube",
       "frequencia": "semanal",
       "ativo": false
@@ -54,7 +54,7 @@ const podcasts = [
       ],
       "tema": "Tecnologia, inovação, gadgets, softwares e comportamento digital.",
       "episodios": 300,
-      "duracao_media_minutos": 65,
+      "duracao": 65,
       "plataforma": "Spotify",
       "frequencia": "quinzenal",
       "ativo": true
@@ -70,7 +70,7 @@ const podcasts = [
       ],
       "tema": "Nostalgia, games antigos e a história dos videogames.",
       "episodios": 500,
-      "duracao_media_minutos": 85,
+      "duracao": 85,
       "plataforma": "Apple Podcasts",
       "frequencia": "semanal",
       "ativo": true
@@ -86,7 +86,7 @@ const podcasts = [
       ],
       "tema": "Ciência de forma descontraída e acessível, com discussões sobre biologia, física, astronomia, etc.",
       "episodios": 600,
-      "duracao_media_minutos": 60,
+      "duracao": 60,
       "plataforma": "Google Podcasts",
       "frequencia": "semanal",
       "ativo": true
@@ -101,7 +101,7 @@ const podcasts = [
       ],
       "tema": "Críticas e análises de filmes, séries e notícias do mundo do cinema.",
       "episodios": 800,
-      "duracao_media_minutos": 105,
+      "duracao": 105,
       "plataforma": "Spotify",
       "frequencia": "semanal",
       "ativo": true
@@ -117,7 +117,7 @@ const podcasts = [
       ],
       "tema": "Comédia e cultura pop, com discussões e brincadeiras sobre diversos temas.",
       "episodios": 200,
-      "duracao_media_minutos": 75,
+      "duracao": 75,
       "plataforma": "YouTube",
       "frequencia": "quinzenal",
       "ativo": false
@@ -135,7 +135,7 @@ const podcasts = [
       ],
       "tema": "Notícias e discussões do mundo dos games, com foco em novidades, lançamentos e análises.",
       "episodios": 300,
-      "duracao_media_minutos": 75,
+      "duracao": 75,
       "plataforma": "Spotify",
       "frequencia": "semanal",
       "ativo": true
@@ -149,7 +149,7 @@ const podcasts = [
       ],
       "tema": "Política internacional e história, com análises aprofundadas sobre eventos globais.",
       "episodios": 400,
-      "duracao_media_minutos": 150,
+      "duracao": 150,
       "plataforma": "Spotify",
       "frequencia": "semanal",
       "ativo": true
