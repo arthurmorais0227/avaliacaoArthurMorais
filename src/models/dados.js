@@ -6,7 +6,7 @@ const podcasts = [
         "Jovem Nerd",
         "Azaghal"
       ],
-      "tema": "Cultura pop, ciência, história, cinema, quadrinhos, tecnologia e games.",
+      "tema": "Multitema",
       "episodios": 900,
       "duracao": 105,
       "plataforma": "Spotify",
@@ -21,7 +21,7 @@ const podcasts = [
         "Beto Estrada",
         "Diogo Braga"
       ],
-      "tema": "Filmes, games, HQs, animações, séries e cultura geek em geral.",
+      "tema": "Geek",
       "episodios": 500,
       "duracao": 75,
       "plataforma": "Apple Podcasts",
@@ -37,7 +37,7 @@ const podcasts = [
         "Rodrigo Saldiva",
         "Thiago Romariz"
       ],
-      "tema": "Novidades sobre o universo Marvel e DC, notícias e análises de filmes, séries e quadrinhos.",
+      "tema": "Quadrinhos",
       "episodios": 400,
       "duracao": 52,
       "plataforma": "YouTube",
@@ -52,7 +52,7 @@ const podcasts = [
         "Paulo Higa",
         "Thiago Mobilon"
       ],
-      "tema": "Tecnologia, inovação, gadgets, softwares e comportamento digital.",
+      "tema": "Tecnologia",
       "episodios": 300,
       "duracao": 65,
       "plataforma": "Spotify",
@@ -68,7 +68,7 @@ const podcasts = [
         "Bruno Carvalho",
         "Evandro de Freitas"
       ],
-      "tema": "Nostalgia, games antigos e a história dos videogames.",
+      "tema": "Games",
       "episodios": 500,
       "duracao": 85,
       "plataforma": "Apple Podcasts",
@@ -84,7 +84,7 @@ const podcasts = [
         "Gustavo",
         "Atila Iamarino"
       ],
-      "tema": "Ciência de forma descontraída e acessível, com discussões sobre biologia, física, astronomia, etc.",
+      "tema": "Ciência",
       "episodios": 600,
       "duracao": 60,
       "plataforma": "Google Podcasts",
@@ -99,7 +99,7 @@ const podcasts = [
         "Maurício Saldanha",
         "Rogério de Castro"
       ],
-      "tema": "Críticas e análises de filmes, séries e notícias do mundo do cinema.",
+      "tema": "Cinema",
       "episodios": 800,
       "duracao": 105,
       "plataforma": "Spotify",
@@ -115,7 +115,7 @@ const podcasts = [
         "Guilherme Briggs",
         "Diogo Defante"
       ],
-      "tema": "Comédia e cultura pop, com discussões e brincadeiras sobre diversos temas.",
+      "tema": "Comédia",
       "episodios": 200,
       "duracao": 75,
       "plataforma": "YouTube",
@@ -133,7 +133,7 @@ const podcasts = [
         "Paulo",
         "Arthur"
       ],
-      "tema": "Notícias e discussões do mundo dos games, com foco em novidades, lançamentos e análises.",
+      "tema": "Games",
       "episodios": 300,
       "duracao": 75,
       "plataforma": "Spotify",
@@ -147,7 +147,7 @@ const podcasts = [
         "Filipe Figueiredo",
         "Matias Pinto"
       ],
-      "tema": "Política internacional e história, com análises aprofundadas sobre eventos globais.",
+      "tema": "Política",
       "episodios": 400,
       "duracao": 150,
       "plataforma": "Spotify",

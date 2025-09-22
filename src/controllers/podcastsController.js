@@ -129,7 +129,7 @@ const createPodcast = (req, res) => {
     });
   }
 
-  if (duracao < 30) {
+  if (duracao < 15) {
     return res.status(400).json({
       success: false,
       message: "A duração média do episódio deve ser maior que 15 minutos!",
@@ -139,7 +139,7 @@ const createPodcast = (req, res) => {
   if (episodios < 0) {
     return res.status(400).json({
       success: false,
-      message: "O número de epsiódios não pode ser negativo!",
+      message: "O número de episiódios não pode ser negativo!",
     });
   }
 
@@ -226,7 +226,7 @@ const updatePodcast = (req, res) => {
     });
   }
 
-  if (duracao < 30) {
+  if (duracao < 15) {
     return res.status(400).json({
       success: false,
       message: "A duração média do episódio deve ser maior que 15 minutos!",
