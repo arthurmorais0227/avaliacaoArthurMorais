@@ -25,6 +25,25 @@ const getAllPodcasts = (req, res) => {
     );
   }
 
+  let curtos = [];
+  let medios = [];
+  let longos = [];
+
+  for (let i = 0; i < duracao.length; i++) {
+    if (duracao[i] < 30) {
+      duracao[i].push(curtos);
+    } else if (duracao[i] >= 30 && duracao[i] <= 60) {
+      duracao[i].push(medios);
+    } else {
+      duracao[i].push(longos);
+    }
+  }
+
+  if (curtos) {
+    
+  }
+
+
   res.status(200).json({
     total: resultado.length,
     podcasts: resultado,
@@ -268,4 +287,4 @@ const updatePodcast = (req, res) => {
       });
 };
 
-export { getAllPodcasts, getPodcastsById, createPodcast, deletePodcast };
+export { getAllPodcasts, getPodcastsById, createPodcast, deletePodcast, updatePodcast };
